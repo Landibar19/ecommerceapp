@@ -1,0 +1,48 @@
+
+@import '../../../components/styles/Styles.scss';
+
+.checkout{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+   
+  
+    &_item{
+        width: auto;
+        height: auto;
+        display:flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 100px;
+        padding-left: 30px;
+    }
+
+    &_subtotal{
+        display: flex;
+        flex-direction: row;
+        
+    }
+    &_shipping{
+     
+        display: flex;
+        flex-direction: row;
+        
+    }
+
+    &_total_amount{
+ 
+        display: flex;
+        flex-direction: row;
+    }
+    h5{
+        padding: 5px;
+        margin: 0;
+        font-size:xx-large;
+    }
+    @include custom{
+        &_item{
+            align-items: flex-start;
+        }
+    }
+}

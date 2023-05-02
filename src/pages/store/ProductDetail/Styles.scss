@@ -1,0 +1,120 @@
+@import '../../../components/styles/Styles.scss';
+.product{
+    width: auto;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(253, 251, 251, 0.2);
+    margin:auto;
+    padding-top: 50px;
+    
+
+    &_all {
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(2,0.8fr);
+        align-items: center;
+        justify-content: center;
+        row-gap: 50px;
+        margin:auto;
+        padding-top:20px
+       
+        
+    }
+    
+    &_filter{
+        display: flex;
+        flex-direction: column;
+        color: black;
+        width:150px;
+        justify-content: center;
+        margin: auto;
+        margin-top: 0;
+        padding: 10px;
+       
+    }
+
+
+    &_details{
+        width: 120px;
+        height: 100%;
+        display: block;
+        align-items: center;
+        justify-content: center;
+        border-style: solid;
+        border-width: 2px;
+        border-color: rgba(100, 98, 98, 0.4);
+        border-radius: 4px;
+        text-align: center;
+        padding: 10px;
+        background-color: rgb(255, 255, 255,0.6);
+        box-shadow:5px 5px 10px 5px rgb(200, 195, 195);
+
+    }
+    img{
+        width: 70px;
+        height: 100px;   
+        border-radius: 4px; 
+    }
+
+    &_data{
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+    &_price{
+        color: orange;
+        font-weight: 500;
+        margin: auto;
+        padding:0 30px;
+        
+    }
+    p{
+        color: black;
+        margin: auto;
+        padding: 5px;
+        text-decoration: none;
+    }
+    button{
+        width: 70%;
+        height: 100%;
+        border-radius: 8px;
+        background-color: red;
+        color: white;
+        cursor: pointer;
+        &:hover{
+            background-color: rgb(74, 3, 3);
+            transition-delay: 0.1s;
+        }
+    }
+    
+    @include custom{
+        max-width:100%;
+        padding-left: 5%;
+        &_details{
+        width: 200px;
+        height:auto
+       
+    }
+    img{
+        width: 120px;
+        height: 130px;
+    }
+
+    &_all{
+        width: 100%;
+        align-items: center;
+        display: grid;
+        height: 100%;
+        grid-template-columns: repeat(3, 0.9fr);
+        row-gap: 40px; 
+           
+    }
+    
+    button{
+        height: 25px;
+    }
+   
+}
+}

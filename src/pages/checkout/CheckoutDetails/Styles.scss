@@ -1,0 +1,66 @@
+@import '../../../components/styles/Styles.scss';
+
+.checkout_details{
+    display: block;
+    width: auto;
+    height: auto;
+    padding-top: 10px;
+    padding-left: 30px;
+   
+  
+
+    form{
+        width: 100%;
+        max-height: 100%;
+        padding-top: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    
+  h3{
+    margin: 0 ;
+  }
+    input {
+        width: 300px;
+    }
+
+    label{
+        padding-left: 5px;
+    }
+    button{
+        width: 150px;
+        height: 25px;
+        cursor: pointer;
+    }
+    &_card{
+    display:flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    align-items:flex-start;
+    
+   }
+   select{
+    width: 300px;
+    height: 30px;
+    margin-left: 5px;
+   }
+   @include custom{
+
+    form {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: repeat(2,0.7fr);
+       
+      
+        
+       button{
+        margin-left: 50%;
+       }
+    }
+   }
+}
+

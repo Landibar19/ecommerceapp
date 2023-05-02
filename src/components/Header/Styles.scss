@@ -1,0 +1,225 @@
+@import '../../components/styles/Styles.scss';
+
+.header{
+    width: 100%;
+    height: 60px;
+    color: rgb(71, 23, 23);
+    position: fixed;
+    z-index: 1000;
+
+    &_logo{
+        :link{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            color: rgb(111, 15, 15);
+            text-decoration: none;
+            img{
+            width: 50px;
+            height: 40px;
+            border-radius: 100%;
+            
+            }
+        }
+    }
+
+    &_content{
+        max-width: 200vh;
+        margin: 0 auto;
+        padding:0;
+        
+        @include custom{
+            padding: 0 32px;
+        }
+        transition: 0.3s ease padding;
+        display: flex;
+        height: 100%;
+        align-items:center;
+
+         & > div {
+            display: flex;
+            margin:auto;
+            padding: 0;
+           
+           
+
+             &:nth-child(2){
+                width:100%;
+                display: flex;
+                justify-content:space-evenly;
+                height: 100%;                
+            }
+
+            &:last-of-type {
+                display: flex;
+                justify-content: center;
+                padding: 5px;       
+            }
+        }
+    }
+    &_button{
+        display: none;
+        @include custom{
+            display: initial;
+        }
+    }
+    &_toggler{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color:rgb(22, 20, 20);
+        color: white;
+        cursor: pointer;
+        border: none;
+        @include custom{
+            display: none;
+        }
+        & > svg{
+            display: block;
+            font-size: 32px;
+        }
+    }
+}
+
+
+
+.nav{
+    width: 50%;
+    position: fixed;
+    top: 45px;
+    right:-100%;
+    align-items:center;
+    justify-content: flex-end;
+    background-color: rgba(10, 10, 176, 0.8);
+    text-align: center;
+   
+
+    &--open{
+        transition:0.5s ease right;
+        right: 0;
+    }
+
+    &_item{
+        display: block;
+        padding: 10px 0px 10px 0px;
+        text-decoration: none;
+        color:white;
+        height: 100%;
+        font-family: 'Trebuchet MS',
+         'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+        border-bottom: 1px;
+        border-style: solid;
+        border-color: rgb(32, 32, 32);
+        transition: 0.3 ease color;
+        &:hover{
+            color:rgb(167, 29, 132);
+            text-decoration: underline;
+            
+        }
+    }
+    
+    &_cart{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding:0;
+
+        
+        &_icon{
+          padding-top: 5px;
+          font-size: 20px;
+          color: rgb(29, 29, 29);
+        }
+        :link{
+            text-decoration: none;
+            color:rgb(223, 203, 203);
+            display: flex;       
+        }
+        p{
+            margin: auto;
+            color: white;
+            padding: 0 0 0 5px;
+            background-color: red;
+            width:15px;
+            border-radius:16px; 
+        } 
+    }
+    &_orders{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding:0;
+        :link{
+            text-decoration: none;
+            color:rgb(199, 33, 33);
+            display: flex;
+        }
+    }
+
+    &_logout{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding:10px ;
+        :link{
+            text-decoration: none;
+            color:rgb(223, 203, 203);
+            display: flex;
+        }
+    }
+
+    @include custom {
+        width: auto;
+        padding: 10px;
+        position: static;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        background-color: initial;
+        
+
+        &_item{
+            padding: 0 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgb(71, 23, 23);
+            border: none;
+        }
+        &_auth{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+        &_cart{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding:0;
+            margin: auto;
+            
+            &_icon{
+              padding-top: 5px;
+              font-size: 20px;
+              color: rgb(26, 26, 26);
+            }
+            :link{
+                text-decoration: none;
+            } 
+            p{
+                color: white;
+                padding: 0 0 0 5px;
+                background-color: red;
+                width:15px;
+                border-radius:16px;   
+            }  
+        }
+    }
+}
+
+
+
+  
+    
+

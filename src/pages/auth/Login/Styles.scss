@@ -1,0 +1,82 @@
+@import '../../../components/styles/Styles.scss';
+
+.login{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: 100%;
+    align-items: center;
+    text-align: center;
+    padding-top: 60px;
+   
+
+    &_form{
+        width:250px;
+        height: 100%;
+        display: block;
+        align-items: center;
+        background-color:white;
+        border-radius: 8px;
+        box-shadow:5px 5px 10px 5px rgb(200, 195, 195);
+
+        @include custom{
+        width: 400px;
+        height: 100%;
+    } 
+        
+    }
+   
+    &_data{
+        display: flex;
+        flex-direction: column;  
+        align-items: center; 
+        padding: 10px;
+        
+    }
+    input{
+       width:95%;
+        margin: 5px;
+        padding: 5px;
+        border-radius: 4px;
+        border-style:solid;
+    }
+
+    &_button{
+        margin: 10px;
+        width: 150px;
+        height: 30px;
+        border-radius: 8px;
+        background-color: rgb(37, 37, 209);
+        color: white;
+        cursor: pointer;
+        &:hover{
+            background-color: rgb(119, 118, 211);
+            transition-delay: 500;
+        }
+       
+    }
+    &_google{
+        background-color: red;
+        padding: 5px;
+        color: white;
+        width:150px;
+        border-radius: 8px;
+        cursor: pointer;
+        &:hover{
+            background-color: rgb(147, 71, 71);
+            transition-duration: 500;
+        };
+    }
+    a{
+        font-size: small;
+        text-decoration: none;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      
+       
+    }
+    &_none{
+        h5{
+            margin: 5px;
+        }
+    }
+}

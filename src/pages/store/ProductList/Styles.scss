@@ -1,0 +1,52 @@
+@import '../../../components/styles/Styles.scss';
+.product_list{
+    width:100%;
+    height: auto;
+    display: block;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+   
+
+    &_filter{
+        max-width: 100%;
+        height: auto;
+        padding-top: 70px;
+        padding-left:10%;
+        
+    }
+    option{
+        display: block;
+        width: 40px;
+        background-color: rgba(151, 146, 146, 0.2);
+        border-radius: 4px;
+    }
+    select{
+        background-color: rgba(247, 242, 242, 0.3);
+    }
+    button{
+        background-color: rgb(62, 62, 246);
+        color: white;
+        font-weight: 400;
+        cursor: pointer;
+        border-radius: 8px;
+        &:hover{
+            background-color:rgb(12, 12, 158);
+            transition-duration: 0.3s;
+        }
+
+    }
+
+  
+    @include custom{
+    position: relative;
+    display:inline-block;
+    margin: 0;
+    
+     &_filter{
+        height: 100%;
+        margin-top: 40px; 
+     }
+        
+    }
+}
